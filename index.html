@@ -1,96 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROFIT FOR YOU</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profit For You</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Navigation Bar -->
-    <header>
-        <div class="logo">
-            <a href="#" onclick="goHome()">
-                <img src="logo.png" alt="Profit For You Logo">
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Trading</a></li>
-                <li><a href="#">Futures</a></li>
-                <li><a href="#">Earn</a></li>
-                <li><a href="#">Buy Assets</a></li>
-                <li><a href="#">Documentation</a></li>
-                <li><a href="#">Our Card</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Sell Products and Earn</a></li>
-                <li><a href="#">Fly Plane</a></li>
-                <li><a href="#">Drive Car</a></li>
-                <li><a href="#">Play Tennis</a></li>
-            </ul>
-        </nav>
-        <div class="login-signup">
-            <a href="#" class="login-btn">Login</a>
-            <a href="#" class="signup-btn">Sign Up</a>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <div class="container">
-        <h1>Welcome to PROFIT FOR YOU!</h1>
-        <p>Our shopping site is under construction.</p>
-        <div class="product">
-            <img src="https://via.placeholder.com/250" alt="Product Image">
-            <h3>Camera</h3>
-            <p>High-quality camera with amazing features.</p>
-            <p class="price">$250</p>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/250" alt="Product Image">
-            <h3>Watch</h3>
-            <p>Stylish and elegant watch for all occasions.</p>
-            <p class="price">$150</p>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/250" alt="Product Image">
-            <h3>Horse Statue</h3>
-            <p>Beautiful hand-crafted horse statue.</p>
-            <p class="price">$120</p>
-        </div>
+  <header>
+    <div class="logo" onclick="location.href='index.html'">
+      <img src="images/logo.png" alt="Profit For You Logo">
+      <span>Profit For You</span>
     </div>
-
-    <!-- Registration Form -->
-    <div class="registration-form">
-        <h2>Register</h2>
-        <form id="registerForm">
-            <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="fname" required>
-            
-            <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lname" required>
-
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-
-            <label for="confirm-password">Confirm Password:</label>
-            <input type="password" id="confirm-password" name="confirm-password" required>
-
-            <label for="id-number">ID Number:</label>
-            <input type="text" id="id-number" name="id-number" required>
-
-            <label for="captcha">Captcha:</label>
-            <input type="text" id="captcha" name="captcha" required>
-
-            <button type="submit">Register</button>
-        </form>
+    <nav>
+      <ul>
+        <li><a href="#">Trading</a></li>
+        <li><a href="#">Futures</a></li>
+        <li><a href="#">Earn</a></li>
+        <li><a href="#">Buy Assets</a></li>
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">Our Card</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Sell Products and Earn</a></li>
+        <li><a href="#">Fly Plane</a></li>
+        <li><a href="#">Drive a Car</a></li>
+        <li><a href="#">Play Tennis</a></li>
+      </ul>
+    </nav>
+    <div class="auth-buttons">
+      <a href="#">Login</a>
+      <a href="#">Sign Up</a>
     </div>
+  </header>
 
-    <script src="app.js"></script>
+  <section class="hero">
+    <h1>Welcome to Profit For You</h1>
+    <p>Explore trading, futures, earn programs, and buy daily products — all in one place.</p>
+  </section>
+
+  <section class="products">
+    <div class="product">
+      <img src="images/phone1.jpg" alt="Mobile 1">
+      <h3>iPhone 14 Pro</h3>
+      <p>Real-time trade view and market insights.</p>
+    </div>
+    <div class="product">
+      <img src="images/phone2.jpg" alt="Mobile 2">
+      <h3>Samsung Galaxy S22</h3>
+      <p>Track crypto prices live with advanced graphs.</p>
+    </div>
+    <div class="product">
+      <img src="images/phone3.jpg" alt="Mobile 3">
+      <h3>Xiaomi 13T</h3>
+      <p>Powerful tools and secure wallet connection.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Profit For You. All rights reserved.</p>
+  </footer>
 </body>
+
 </html>
