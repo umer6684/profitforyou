@@ -1,155 +1,164 @@
 <!DOCTYPE html>
-<html lang="ur">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PROFIT FOR YOU - رجسٹریشن</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFIT FOR YOU</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #eef2f3;
+            background: linear-gradient(to right, orange, blue);
+            color: #fff;
             margin: 0;
             padding: 0;
-            direction: rtl;
         }
 
         header {
-            background-color: #1a1a2e;
-            color: white;
-            padding: 15px 30px;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            padding: 20px;
+            background-color: #333;
         }
 
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
+        header h1 {
+            font-size: 36px;
+            color: #fff;
         }
 
-        nav a {
-            color: white;
-            margin-left: 20px;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        .auth-buttons {
-            margin-left: auto;
-        }
-
-        .auth-buttons a {
-            color: white;
-            margin-left: 15px;
-            text-decoration: none;
-            border: 1px solid white;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: 40px auto;
-            padding: 30px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
-        }
-
-        h2 {
-            text-align: center;
-            color: #333;
-        }
-
-        form {
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
             display: flex;
-            flex-direction: column;
         }
 
-        label {
-            margin-top: 15px;
-            margin-bottom: 5px;
-            color: #444;
+        nav ul li {
+            margin-right: 20px;
         }
 
-        input {
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .register-form {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            color: #000;
+            border-radius: 8px;
+        }
+
+        .register-form input, .register-form button {
+            width: 100%;
             padding: 10px;
+            margin: 10px 0;
             border: 1px solid #ccc;
-            border-radius: 5px;
+            border-radius: 4px;
         }
 
-        .captcha {
-            margin-top: 15px;
-        }
-
-        .submit-button {
-            margin-top: 25px;
-            padding: 12px;
-            background-color: #1a1a2e;
+        .register-form button {
+            background-color: orange;
             color: white;
-            border: none;
-            font-size: 16px;
-            border-radius: 5px;
             cursor: pointer;
         }
 
-        .submit-button:hover {
-            background-color: #16213e;
+        .product {
+            display: inline-block;
+            width: 250px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            color: #333;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .product p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .product .price {
+            color: #28a745;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="logo">🛍️ PROFIT FOR YOU</div>
+    <h1>PROFIT FOR YOU</h1>
     <nav>
-        <a href="#">ٹریڈنگ</a>
-        <a href="#">فیوچرز</a>
-        <a href="#">کمائیں</a>
-        <a href="#">ایسٹ خریدیں</a>
-        <a href="#">دستاویزات</a>
-        <a href="#">ہمارا کارڈ</a>
-        <a href="#">رابطہ کریں</a>
-        <a href="#">مصنوعات بیچیں اور کمائیں</a>
-        <a href="#">جہاز اُڑائیں</a>
-        <a href="#">گاڑی چلائیں</a>
-        <a href="#">ٹینس کھیلیں</a>
+        <ul>
+            <li><a href="#">Trading</a></li>
+            <li><a href="#">Futures</a></li>
+            <li><a href="#">Earn</a></li>
+            <li><a href="#">Buy Assets</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Our Card</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Sell Products and Earn</a></li>
+            <li><a href="#">Fly Plane</a></li>
+            <li><a href="#">Drive a Car</a></li>
+            <li><a href="#">Play Tennis</a></li>
+        </ul>
     </nav>
-    <div class="auth-buttons">
-        <a href="#">لاگ ان</a>
-        <a href="#">سائن اپ</a>
-    </div>
 </header>
 
-<div class="container">
-    <h2>رجسٹریشن فارم</h2>
+<div class="register-form">
+    <h2>Register</h2>
     <form action="#" method="POST">
-        <label for="firstName">نام:</label>
-        <input type="text" id="firstName" name="firstName" required>
-
-        <label for="lastName">سرنیم:</label>
-        <input type="text" id="lastName" name="lastName" required>
-
-        <label for="phone">فون نمبر:</label>
-        <input type="text" id="phone" name="phone" required>
-
-        <label for="email">ای میل:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="password">پاسورڈ:</label>
-        <input type="password" id="password" name="password" required>
-
-        <label for="repeatPassword">دوبارہ پاسورڈ:</label>
-        <input type="password" id="repeatPassword" name="repeatPassword" required>
-
-        <label for="idNumber">شناختی کارڈ نمبر:</label>
-        <input type="text" id="idNumber" name="idNumber" required>
-
-        <label for="captcha">کیپچا:</label>
-        <input type="text" id="captcha" name="captcha" placeholder="4 + 3 = ?" required>
-
-        <button type="submit" class="submit-button">رجسٹر کریں</button>
+        <input type="text" name="first-name" placeholder="First Name" required>
+        <input type="text" name="last-name" placeholder="Last Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="phone" placeholder="Phone Number" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="password" name="confirm-password" placeholder="Confirm Password" required>
+        <input type="text" name="id-number" placeholder="ID Number" required>
+        <button type="submit">Register</button>
     </form>
 </div>
+
+<div class="product">
+    <img src="https://via.placeholder.com/250" alt="Mobile Trade Data">
+    <h3>Mobile Trade Data</h3>
+    <p>Real-time trade data displayed on your mobile screen.</p>
+    <p class="price">$199</p>
+</div>
+
+<footer>
+    <p>&copy; 2025 PROFIT FOR YOU. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
