@@ -62,35 +62,42 @@
       text-align: center;
     }
 
-    .product {
-      display: inline-block;
-      background-color: #161b22;
-      padding: 20px;
-      border-radius: 10px;
-      margin-top: 20px;
-      width: 250px;
-      box-shadow: 0 0 10px rgba(255,255,255,0.05);
-    }
-
-    .product img {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    .product h3 {
-      color: #58a6ff;
-    }
-
-    .product .price {
-      color: #3fb950;
-      font-weight: bold;
-    }
-
     footer {
       text-align: center;
       padding: 20px;
       background-color: #0d1117;
       color: #8b949e;
+    }
+
+    #register-form {
+      background-color: #161b22;
+      padding: 30px;
+      margin: 20px auto;
+      max-width: 400px;
+      border-radius: 10px;
+      display: none;
+    }
+
+    #register-form input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    #register-form button {
+      background-color: #58a6ff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #register-form h2 {
+      margin-bottom: 20px;
     }
   </style>
 </head>
@@ -112,26 +119,39 @@
       <a href="#">Play Tennis</a>
     </nav>
     <div class="auth-buttons">
+      <button onclick="toggleRegister()">Register</button>
       <button>Login</button>
-      <button>Sign Up</button>
     </div>
   </header>
 
   <div class="main">
     <h1>Welcome to PROFIT FOR YOU</h1>
     <p>Your one-stop platform to trade, shop, and earn.</p>
+  </div>
 
-    <div class="product">
-      <img src="https://via.placeholder.com/250" alt="Sample Product" />
-      <h3>Smart Watch</h3>
-      <p>Trendy smart watch with latest features.</p>
-      <p class="price">$120</p>
-    </div>
+  <div id="register-form">
+    <h2>رجسٹریشن فارم</h2>
+    <input type="text" placeholder="نام" required />
+    <input type="text" placeholder="سرنیم" required />
+    <input type="text" placeholder="فون نمبر" required />
+    <input type="email" placeholder="ای میل" required />
+    <input type="password" placeholder="پاسورڈ" required />
+    <input type="password" placeholder="پاسورڈ دوبارہ لکھیں" required />
+    <input type="text" placeholder="شناختی کارڈ نمبر" required />
+    <input type="text" placeholder="کیپچا لکھیں" required />
+    <button>رجسٹر کریں</button>
   </div>
 
   <footer>
     © 2025 PROFIT FOR YOU. All rights reserved.
   </footer>
+
+  <script>
+    function toggleRegister() {
+      const form = document.getElementById("register-form");
+      form.style.display = form.style.display === "none" ? "block" : "none";
+    }
+  </script>
 
 </body>
 </html>
