@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFIT FOR YOU</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">
+            <a href="#" onclick="goHome()">
+                <img src="logo.png" alt="Profit For You Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Trading</a></li>
+                <li><a href="#">Futures</a></li>
+                <li><a href="#">Earn</a></li>
+                <li><a href="#">Buy Assets</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Our Card</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Sell Products and Earn</a></li>
+                <li><a href="#">Fly Plane</a></li>
+                <li><a href="#">Drive Car</a></li>
+                <li><a href="#">Play Tennis</a></li>
+            </ul>
+        </nav>
+        <div class="login-signup">
+            <a href="#" class="login-btn">Login</a>
+            <a href="#" class="signup-btn">Sign Up</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Welcome to PROFIT FOR YOU!</h1>
+        <p>Our shopping site is under construction.</p>
+        <div class="product">
+            <img src="https://via.placeholder.com/250" alt="Product Image">
+            <h3>Camera</h3>
+            <p>High-quality camera with amazing features.</p>
+            <p class="price">$250</p>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/250" alt="Product Image">
+            <h3>Watch</h3>
+            <p>Stylish and elegant watch for all occasions.</p>
+            <p class="price">$150</p>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/250" alt="Product Image">
+            <h3>Horse Statue</h3>
+            <p>Beautiful hand-crafted horse statue.</p>
+            <p class="price">$120</p>
+        </div>
+    </div>
+
+    <!-- Registration Form -->
+    <div class="registration-form">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required>
+            
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <label for="id-number">ID Number:</label>
+            <input type="text" id="id-number" name="id-number" required>
+
+            <label for="captcha">Captcha:</label>
+            <input type="text" id="captcha" name="captcha" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
