@@ -1,157 +1,155 @@
 <!DOCTYPE html>
 <html lang="ur">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PROFIT FOR YOU</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0d1117;
-      color: #ffffff;
-    }
+    <meta charset="UTF-8">
+    <title>PROFIT FOR YOU - رجسٹریشن</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f3;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
 
-    header {
-      background-color: #161b22;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+        header {
+            background-color: #1a1a2e;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-      color: #58a6ff;
-    }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
 
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      align-items: center;
-    }
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
 
-    nav a {
-      color: #c9d1d9;
-      text-decoration: none;
-      font-size: 15px;
-    }
+        .auth-buttons {
+            margin-left: auto;
+        }
 
-    nav a:hover {
-      color: #58a6ff;
-    }
+        .auth-buttons a {
+            color: white;
+            margin-left: 15px;
+            text-decoration: none;
+            border: 1px solid white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
 
-    .auth-buttons {
-      display: flex;
-      gap: 10px;
-    }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
 
-    .auth-buttons button {
-      background-color: #238636;
-      color: white;
-      border: none;
-      padding: 6px 12px;
-      border-radius: 4px;
-      cursor: pointer;
-    }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
 
-    .main {
-      padding: 40px 20px;
-      text-align: center;
-    }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #0d1117;
-      color: #8b949e;
-    }
+        label {
+            margin-top: 15px;
+            margin-bottom: 5px;
+            color: #444;
+        }
 
-    #register-form {
-      background-color: #161b22;
-      padding: 30px;
-      margin: 20px auto;
-      max-width: 400px;
-      border-radius: 10px;
-      display: none;
-    }
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
 
-    #register-form input {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      border: none;
-      border-radius: 5px;
-    }
+        .captcha {
+            margin-top: 15px;
+        }
 
-    #register-form button {
-      background-color: #58a6ff;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      margin-top: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+        .submit-button {
+            margin-top: 25px;
+            padding: 12px;
+            background-color: #1a1a2e;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-    #register-form h2 {
-      margin-bottom: 20px;
-    }
-  </style>
+        .submit-button:hover {
+            background-color: #16213e;
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <div class="logo">PROFIT FOR YOU</div>
+<header>
+    <div class="logo">🛍️ PROFIT FOR YOU</div>
     <nav>
-      <a href="#">Trading</a>
-      <a href="#">Futures</a>
-      <a href="#">Earn</a>
-      <a href="#">Buy Assets</a>
-      <a href="#">Documentation</a>
-      <a href="#">Our Card</a>
-      <a href="#">Contact Us</a>
-      <a href="#">Sell Products & Earn</a>
-      <a href="#">Fly Plane</a>
-      <a href="#">Drive a Car</a>
-      <a href="#">Play Tennis</a>
+        <a href="#">ٹریڈنگ</a>
+        <a href="#">فیوچرز</a>
+        <a href="#">کمائیں</a>
+        <a href="#">ایسٹ خریدیں</a>
+        <a href="#">دستاویزات</a>
+        <a href="#">ہمارا کارڈ</a>
+        <a href="#">رابطہ کریں</a>
+        <a href="#">مصنوعات بیچیں اور کمائیں</a>
+        <a href="#">جہاز اُڑائیں</a>
+        <a href="#">گاڑی چلائیں</a>
+        <a href="#">ٹینس کھیلیں</a>
     </nav>
     <div class="auth-buttons">
-      <button onclick="toggleRegister()">Register</button>
-      <button>Login</button>
+        <a href="#">لاگ ان</a>
+        <a href="#">سائن اپ</a>
     </div>
-  </header>
+</header>
 
-  <div class="main">
-    <h1>Welcome to PROFIT FOR YOU</h1>
-    <p>Your one-stop platform to trade, shop, and earn.</p>
-  </div>
-
-  <div id="register-form">
+<div class="container">
     <h2>رجسٹریشن فارم</h2>
-    <input type="text" placeholder="نام" required />
-    <input type="text" placeholder="سرنیم" required />
-    <input type="text" placeholder="فون نمبر" required />
-    <input type="email" placeholder="ای میل" required />
-    <input type="password" placeholder="پاسورڈ" required />
-    <input type="password" placeholder="پاسورڈ دوبارہ لکھیں" required />
-    <input type="text" placeholder="شناختی کارڈ نمبر" required />
-    <input type="text" placeholder="کیپچا لکھیں" required />
-    <button>رجسٹر کریں</button>
-  </div>
+    <form action="#" method="POST">
+        <label for="firstName">نام:</label>
+        <input type="text" id="firstName" name="firstName" required>
 
-  <footer>
-    © 2025 PROFIT FOR YOU. All rights reserved.
-  </footer>
+        <label for="lastName">سرنیم:</label>
+        <input type="text" id="lastName" name="lastName" required>
 
-  <script>
-    function toggleRegister() {
-      const form = document.getElementById("register-form");
-      form.style.display = form.style.display === "none" ? "block" : "none";
-    }
-  </script>
+        <label for="phone">فون نمبر:</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="email">ای میل:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">پاسورڈ:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="repeatPassword">دوبارہ پاسورڈ:</label>
+        <input type="password" id="repeatPassword" name="repeatPassword" required>
+
+        <label for="idNumber">شناختی کارڈ نمبر:</label>
+        <input type="text" id="idNumber" name="idNumber" required>
+
+        <label for="captcha">کیپچا:</label>
+        <input type="text" id="captcha" name="captcha" placeholder="4 + 3 = ?" required>
+
+        <button type="submit" class="submit-button">رجسٹر کریں</button>
+    </form>
+</div>
 
 </body>
 </html>
