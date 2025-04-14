@@ -1,3 +1,4 @@
+/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -5,126 +6,146 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, #FF8C00, #FFD700);
-  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  color: white;
+  line-height: 1.6;
 }
 
-header {
+/* Navigation Bar */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #292b2c;
-  padding: 20px;
+  padding: 1rem 2rem;
+  background-color: #1c1f2b;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
-  color: white;
   display: flex;
   align-items: center;
   cursor: pointer;
+  gap: 0.5rem;
 }
 
 .logo img {
   height: 40px;
-  margin-right: 10px;
 }
 
 .logo span {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
+  color: #00e5ff;
 }
 
-nav ul {
-  list-style-type: none;
+.main-nav ul {
   display: flex;
+  list-style: none;
+  gap: 1.2rem;
 }
 
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
+.main-nav ul li a {
   text-decoration: none;
   color: white;
-  font-size: 18px;
+  font-weight: 500;
   transition: color 0.3s;
 }
 
-nav ul li a:hover {
-  color: #FF8C00;
+.main-nav ul li a:hover {
+  color: #00e5ff;
 }
 
 .auth-buttons a {
   text-decoration: none;
-  color: white;
-  background-color: #FF8C00;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin-left: 15px;
-  transition: background-color 0.3s;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: all 0.3s;
 }
 
-.auth-buttons a:hover {
-  background-color: #FFD700;
+.login-btn {
+  background-color: transparent;
+  border: 2px solid #00e5ff;
+  color: #00e5ff;
 }
 
+.signup-btn {
+  background-color: #00e5ff;
+  color: #000;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+  background-color: #fff;
+  color: #000;
+  border: none;
+}
+
+/* Hero Section */
 .hero {
   text-align: center;
-  color: white;
-  padding: 60px 0;
+  padding: 4rem 2rem;
 }
 
 .hero h1 {
-  font-size: 50px;
-  font-weight: bold;
+  font-size: 2.5rem;
+  color: #00e5ff;
+  margin-bottom: 1rem;
 }
 
 .hero p {
-  font-size: 22px;
+  font-size: 1.1rem;
+  color: #e0e0e0;
 }
 
+/* Products Section */
 .products {
   display: flex;
-  justify-content: space-around;
-  padding: 40px 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background: #1c1f2b;
 }
 
-.product {
-  background-color: white;
+.product-card {
+  background-color: #2a2d3e;
+  border-radius: 12px;
+  padding: 1rem;
   width: 250px;
   text-align: center;
-  border-radius: 10px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+  transition: transform 0.3s;
 }
 
-.product:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+.product-card:hover {
+  transform: translateY(-5px);
 }
 
-.product img {
+.product-card img {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
-.product h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
+.product-card h3 {
+  color: #00e5ff;
+  margin-bottom: 0.5rem;
 }
 
-.product p {
-  font-size: 14px;
-  color: #666;
+.product-card p {
+  color: #c0c0c0;
 }
 
+/* Footer */
 footer {
-  background-color: #292b2c;
   text-align: center;
-  padding: 20px;
-  color: white;
+  padding: 2rem;
+  background: #12131a;
+  color: #aaa;
+  font-size: 0.9rem;
 }
